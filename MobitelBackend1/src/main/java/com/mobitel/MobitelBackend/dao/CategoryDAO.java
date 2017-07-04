@@ -30,7 +30,7 @@ public class CategoryDAO
 		session.saveOrUpdate(category);
 	}
 	
-	public Category getCategory(int catid)
+	public Category getCategory(String catid)
 	{
 		Session session=sessionFactory.openSession();
 		Category category=(Category)session.get(Category.class,catid);
@@ -48,6 +48,7 @@ public class CategoryDAO
 	{
 		Session session=sessionFactory.openSession();
 		Query query=session.createQuery("from Category");
+		@SuppressWarnings("unchecked")
 		List<Category> list=query.list();
 		session.close();
 		return list;

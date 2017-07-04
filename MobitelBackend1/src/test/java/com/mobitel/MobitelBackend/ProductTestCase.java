@@ -30,7 +30,7 @@ public class ProductTestCase {
 		product.setQuantity(1);
 		product.setSuppid(132);
 		product.setProdname("WIFIMobile");
-		product.setProdesc("This Mobile is WIFI Enabled. You can Enjoy Internet");
+		product.setProddesc("This Mobile is WIFI Enabled. You can Enjoy Internet");
 
 		productDAO.insertUpdateProduct(product);		
 		System.out.println("Product Inserted");

@@ -1,7 +1,7 @@
 package com.mobitel.MobitelBackend.model;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
+
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -10,14 +10,14 @@ import javax.persistence.Table;
 public class Product
 { 
 	@Id
-	@GeneratedValue
+	
 	int prodid;
 	
 	int catid,suppid,quantity,price;
 	
 	String prodname;
 	
-    String prodesc;
+    String proddesc;
 
 	public int getProdid() {
 		return prodid;
@@ -67,12 +67,12 @@ public class Product
 		this.price = price;
 	}
 
-	public String getProdesc() {
-		return prodesc;
+	public String getProddesc() {
+		return proddesc;
 	}
 
-	public void setProdesc(String prodesc) {
-		this.prodesc = prodesc;
+	public void setProddesc(String proddesc) {
+		this.proddesc = proddesc;
 	}
 	
 	

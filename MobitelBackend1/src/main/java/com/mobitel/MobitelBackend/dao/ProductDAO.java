@@ -28,7 +28,7 @@ public class ProductDAO
 	
 	
 	
-	public Product getproduct(int prodid)
+	public Product getProduct(int prodid)
 	{
 		Session session=sessionFactory.openSession();
 		Product product=(Product)session.get(Product.class,prodid);
@@ -42,7 +42,7 @@ public class ProductDAO
 		sessionFactory.getCurrentSession().delete(product);
 	}
 	
-	public List<Product> getSupplierDetails()
+	public List<Product> getProductDetails()
 	{
 		Session session=sessionFactory.openSession();
 		Query query=session.createQuery("from Product");
